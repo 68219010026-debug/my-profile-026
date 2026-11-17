@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // เพิ่มระบบ Smooth Scroll เมื่อคลิกเมนูนำทาง
+  // ระบบ Smooth Scroll เมื่อคลิกเมนูนำทาง
   const navLinks = document.querySelectorAll('.nav-links a');
 
   navLinks.forEach((link) => {

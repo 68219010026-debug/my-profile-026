@@ -1,160 +1,151 @@
 * {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: sans-serif;
-    background-color: fuchsia;
-    margin: 0;
-    padding: 0;
-    color: hotpink;
+  font-family: sans-serif;
+  background-color: #ff00ff; /* แก้ไขค่าสี fuchsia ให้ถูกต้อง */
+  margin: 0;
+  padding: 0;
+  color: hotpink;
 }
 
 /* Header & Navigation */
-.main-header {
-    position: sticky;
-    top: 0;
-    background: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 32px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    z-index: 100;
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
-.main-header .logo {
-    font-size: 20px;
-    font-weight: bold;
-    color: deeppink;
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: deeppink;
 }
 
-.main-header .logo span {
-    color: #b12994;
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
-.navbar a {
-    color: deeppink;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-    transition: color 0.3s;
+.nav-links a {
+  text-decoration: none;
+  color: hotpink;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-.navbar a:hover {
-    color: #b12994;
+.nav-links a:hover {
+  color: deeppink;
 }
 
-/* Main Layout */
+/* Container */
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px 16px 40px;
+  padding: 20px 16px;
 }
 
-.profile-card, .content-card {
-    background: #f1f8f1;
-    border-radius: 16px;
-    padding: 30px;
-    margin-top: 30px;
-    box-shadow: 0 8px 24px rgba(15, 39, 71, 0.12);
-    line-height: 1.8;
-}
-
-.photo-container {
-    text-align: center;
+/* Content Cards & Profile Card */
+.profile-card,
+.content-card {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #f1f8f1;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 39, 71, 0.12);
+  line-height: 1.8;
 }
 
 .photo {
-    max-width: 300px;
-    width: 100%;
-    border-radius: 50%;
+  max-width: 300px;
+  border-radius: 50%;
 }
 
-h1, h2 {
-    color: deeppink;
-    text-align: center;
+h1,
+h2 {
+  color: deeppink;
+  text-align: center;
 }
 
 .motto {
-    margin-top: 24px;
-    padding: 16px;
-    background: #e7e3e3;
-    border-left: 5px solid #2563eb;
-    border-radius: 8px;
+  margin-top: 24px;
+  padding: 16px;
+  background: #e7e3e3;
+  border-left: 5px solid #2563eb;
+  border-radius: 8px;
 }
 
 .motto h2 {
-    text-align: left;
-    margin-top: 0;
+  text-align: left;
+  margin-top: 0;
 }
 
 button {
-    margin-top: 16px;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    background: #eceef1;
-    color: deeppink;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
+  margin-top: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #b12994;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 button:hover {
-    background: #b12994;
-    color: white;
+  background: deeppink;
 }
 
 #greetingMessage {
-    color: #8c2a2a;
-    font-weight: bold;
+  color: #8c2a2a;
+  font-weight: bold;
 }
 
-/* Skills & Projects Details */
+/* Skills Section Styles */
 .skills-list {
-    color: #333;
-    padding-left: 20px;
+  list-style-type: square;
+  padding-left: 20px;
+  color: #333;
 }
 
-.skills-list li {
-    margin-bottom: 8px;
-}
-
+/* Projects Section Styles */
 .projects-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .project-item {
-    background: #ffffff;
-    padding: 16px;
-    border-radius: 8px;
-    border-left: 4px solid deeppink;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid deeppink;
 }
 
 .project-item h3 {
-    margin-top: 0;
-    color: #b12994;
+  margin: 0 0 8px 0;
+  color: deeppink;
 }
 
 .project-item p {
-    color: #444;
-    margin-bottom: 0;
+  margin: 0;
+  color: #444;
 }
 
 /* Footer */
-.main-footer {
-    background: #ffffff;
-    text-align: center;
-    padding: 16px;
-    color: deeppink;
-    font-weight: bold;
-    margin-top: 40px;
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  color: deeppink;
+  margin-top: 40px;
+  font-weight: bold;
 }
