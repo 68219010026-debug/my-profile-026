@@ -17,11 +17,17 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#estimator">Cost Estimator</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
+        <!-- ส่วนที่ 1: แสดงข้อความต้อนรับผู้เข้าชม (Personalized Welcome) -->
+        <div class="welcome-banner">
+            <h2 id="welcomeText">ยินดีต้อนรับเข้าสู่เว็บไซต์ Portfolio ของฉัน</h2>
+        </div>
+
         <!-- ส่วนโปรไฟล์เดิม -->
         <main class="profile-card">
             <center>
@@ -74,6 +80,17 @@
                     <p>โปรเจกต์ทดลองสร้างระบบแสดงผลและจัดการข้อมูลนักเรียน</p>
                 </div>
             </div>
+        </section>
+
+        <!-- ส่วนที่ 2: ระบบประมาณการค่าบริการพัฒนาเว็บไซต์ (Website Cost Estimator) -->
+        <section id="estimator" class="content-card">
+            <h2>ประมาณการค่าบริการพัฒนาเว็บไซต์</h2>
+            <p>อัตราค่าบริการพัฒนาเว็บไซต์: <strong>หน้าละ 500 บาท</strong></p>
+            <div class="estimator-box">
+                <p>จำนวนหน้าที่ต้องการพัฒนา: <strong id="pageCountDisplay">0</strong> หน้า</p>
+                <p>ค่าบริการรวมทั้งหมด: <strong id="totalCostDisplay">0</strong> บาท</p>
+            </div>
+            <button id="recalculateBtn">คำนวณจำนวนหน้าใหม่</button>
         </section>
     </div>
 
